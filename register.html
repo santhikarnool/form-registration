@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Registration</h1>
+        <form id="registrationForm">
+            <label>Full Name:</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+            <label>Email:</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+            <label>Phone Number:</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter phone number" required>
+            <label>Gender:</label>
+            <div class="options">
+                <input type="radio" name="gender"
+                       value="Male" required> Male
+                <input type="radio" name="gender"
+                       value="Female"> Female
+                <input type="radio" name="gender"
+                       value="Other"> Other
+            </div>
+            <label>Select Course:</label>
+            <select id="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+            </select>
+            <label>Skills:</label>
+            <div class="options">
+                <input type="checkbox" name="skills" value="HTML"> HTML
+                <input type="checkbox" name="skills" value="CSS"> CSS
+                <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+            </div>
+            <div class="buttons">
+                <button type="submit">Register</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px gray;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.options {
+    margin: 8px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 8px 3px 8px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.reset {
+    background-color: gray;
+}
+
+.reset:hover {
+    background-color: darkgray;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: auto;
+        margin: 15px;
+    }
+}
